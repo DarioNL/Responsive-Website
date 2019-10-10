@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    padding: 0;
+}
+div#wrapper{
+    background-color: #fbefea;
+}
+header{
+    background-color: #b9ebdf;
+    text-align: center;
+}
+/* -- Navigatie -- */
+ul{
+    padding: 0;
+    margin: 0;
+}
+img#logo{
+    width: 320px;
+}
+img{
+    width: 100%;
+}
+li{
+    background-color: #818081;
+    padding: 10px;
+    padding-left: 20px;
+    border-top: 1px solid white;
+}
+li a{
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+@media all and (min-width: 550px){
+    ul{
+        background-color: #818081;
+        border-top: 1px solid white;
+    }
+    li{
+        display: inline-block;
+        border: none;
+    }
+}
+/* -- Einde Navigatie -- */
+h3{
+    color: #dc7b95;
+    font-weight: 600;
+}
+/* -- Sections en Footers -- */
+section, footer{
+    padding: 20px;
+}
+@media all and (min-width: 550px){
+    section#Nieuws{
+        width: 40%;
+        float: left;
+    }
+    section#Instrumenten{
+        width: 60%;
+        float: right;
+    }
+}
+@media all and (min-width: 800px){
+    section#Nieuws{
+        width: 30%;
+        float: left;
+    }
+    section#Instrumenten{
+        width: 70%;
+        float: right;
+    }
+    article{
+        display: inline-block;
+        width: 47%;
+        margin-right: 20px;
+    }
+    article:nth-child(even){
+        margin-right: 0px;
+    }
+}
+@media all and (min-width: 1200px){
+    div#wrapper{
+        width: 1200px;
+        margin: auto;
+    }
+}
+
+footer{
+    background-color: #818081;
+    color: white;
+    clear: both;
+}
+footer h3{
+    color: white;
+}
